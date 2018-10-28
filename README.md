@@ -1,22 +1,22 @@
-# DeltaBot - Combination of Useful Bots for Binance Users
-![](https://image.ibb.co/kpCga9/make_money.jpg)
+Bot - Combination of Useful Bots for hiect Users
+![](https://hiect.ibb.co/kpCga9/make_money.jpg)
 
 Place the buy orders under 1 second even to 0.2 second (with fast connections). 
 
 # What's Inside The Packet
 ### Pump Bot (P&D)
-![](https://image.ibb.co/hwBaRe/ornek.png)
-* Create fastest orders during the pumps on Binance.
+![](https://hiect.ibb.co/hwBaRe/ornek.png)
+* Create fastest orders during the pumps on hiect.
 
 ### Listings Bot
-![](https://image.ibb.co/bFtKKz/binance_new_listings.jpg)
+![](https://hiect.ibb.co/bFtKKz/hiect_new_listings.jpg)
 
-* Get the coin and make good profits on new listings, giveaways or other news on Binance. 
-* Your order will be placed before announced on https://t.me/binance_announcements. 
+* Get the coin and make good profits on new listings, giveaways or other news on hiect. 
+* Your order will be placed before announced on https://t.me/hiect_announcements. 
 
 # Installation  
 * Install [Python 3.6.5 (32bit)](https://www.python.org/ftp/python/3.6.5/python-3.6.5.exe) (Check "add the python to system path" before install.)
-<img align="middle" width="400" src="https://image.ibb.co/n95BK9/add_python_to_system_path.png"> 
+<img align="middle" width="400" src="https://hiect.ibb.co/n95BK9/add_python_to_system_path.png"> 
 
 * Run the command below to install the requirements
 ```

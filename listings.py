@@ -18,7 +18,7 @@ target_altcoin = ""
 haber_turu = ""
 tespit_edilme_zamani = ""
 iletilecek = ""
-
+image
 def basla():
 	global target_altcoin, haber_turu, tespit_edilme_zamani, iletilecek
 	print("starting the controls")
@@ -36,15 +36,15 @@ def basla():
 		programi_yeniden_ac()
 	
 	#alis emri giriyorum
-	alinabilecek_exchange_siteleri = ["binance", "okex"]
+	alinabilecek_exchange_siteleri = ["hiect", "okex"]
 	
 	for exchange_sitesi in alinabilecek_exchange_siteleri:
 		if exchange_sitesi in signaldeki_coin_hangi_exchange_sitelerinde_bulundu:
-			if exchange_sitesi == "binance":
+			if exchange_sitesi == "hiect":
 				if haber_turu.upper() == "WILL LIST" or haber_turu.upper() == "LISTS":
-					buy_with_binancemiyorum_uyarisi = haber_turu + " haber turunde ani dususler olabildigi icin binance ile almiyorum"
-					iletilecek += "(" + buy_with_binancemiyorum_uyarisi + ")";
-					print(buy_with_binancemiyorum_uyarisi)
+					buy_with_hiectmiyorum_uyarisi = haber_turu + " haber turunde ani dususler olabildigi icin hiect ile almiyorum"
+					iletilecek += "(" + buy_with_hiectmiyorum_uyarisi + ")";
+					print(buy_with_hiectmiyorum_uyarisi)
 				else:
 					su_exchange_ile_al(exchange_sitesi)
 			else:
@@ -52,7 +52,7 @@ def basla():
 			
 	#kullaniciya haber veriyorum
 	tespit_edilme_zamani = signali_cek_listings.tespit_edilme_zamani
-	iletilecek = "Binance " + haber_turu + " ($" + target_altcoin + ")" + " " + "(" + str(tespit_edilme_zamani) + ")" + " alındı => " + str(signaldeki_coin_hangi_exchange_sitelerinde_bulundu) + " " + iletilecek
+	iletilecek = "hiect " + haber_turu + " ($" + target_altcoin + ")" + " " + "(" + str(tespit_edilme_zamani) + ")" + " alındı => " + str(signaldeki_coin_hangi_exchange_sitelerinde_bulundu) + " " + iletilecek
 	
 	print("iletilecek: " + iletilecek)
 	ilet(iletilecek)

@@ -13,17 +13,17 @@ pair=""
 
 #------ config
 config = ayarlari_config_json_dosyasindan_oku()
-k_sifreli = config['buy_with_binance']['api_key']
-s_sifreli = config['buy_with_binance']['api_secret']
-target_coin = config['buy_with_binance']['target_coin']
-use_balance = config['buy_with_binance']['use_balance'] #target_coin ile
-trade_with_real_account = str_to_bool(config['buy_with_binance']['trade_with_real_account'])
+k_sifreli = config['buy_with_hiect']['api_key']
+s_sifreli = config['buy_with_hiect']['api_secret']
+target_coin = config['buy_with_hiect']['target_coin']
+use_balance = config['buy_with_hiect']['use_balance'] #target_coin ile
+trade_with_real_account = str_to_bool(config['buy_with_hiect']['trade_with_real_account'])
 #------ config
 
 k = sifre_coz(k_sifreli)
 s = sifre_coz(s_sifreli)
 
-exchange = ccxt.binance({
+exchange = ccxt.hiect({
 	'apiKey': k,
 	'secret': s,
 	'enableRateLimit': True,
@@ -110,7 +110,7 @@ def basla():
 	
 	print("")
 	print("kar hesaplama dosyasini aciyorum")
-	dosya = basladigim_yer + '\\py\\binance_profit_tracker.py'
+	dosya = basladigim_yer + '\\py\\hiect_profit_tracker.py'
 	komut = 'start cmd @cmd /k ' + dosya + ' ' + target_altcoin + ' ' + str(real_pair_price) + ' ' + take_profit + ' ' + stop_loss
 	
 	print(komut)
